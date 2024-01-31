@@ -1,0 +1,64 @@
+header{
+    background-color: white;
+    position: relative;
+    height: 280px;
+    width: 100%;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.logo{
+    height: 100%;
+    width: 100%;
+   
+}
+main{
+    margin-top: 5%;
+   background-color: lightblue;
+   height: auto;
+   padding: 15px;
+   border: 2px solid silver;
+   border-radius: 2%;
+ display: flex;
+ align-items: center;
+justify-content: center;
+flex-direction: column;
+ 
+}
+h1{
+    padding: 15px;
+  position: relative;
+  align-self: center center;
+  font-size: 40px;
+
+}
+article{
+    padding: 15px;
+    font-size: 30px;
+    font-style:italic;
+   margin: 15px;
+}
+li{
+    font-weight: bold;
+}
+.container{
+    height: 600px;
+    width: 500px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;  
+   margin-top: 10%;
+ 
+}
+button{
+    margin: 5%;
+}
+video{
+    height: 500px;
+    width: 500px;
+}
+h3{
+    margin-top: 205%;
+}

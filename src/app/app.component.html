@@ -1,4 +1,46 @@
-
-
-
+<header>
+<div style="height: 100%;width: 30%;">
+  <img class="logo"  src="../assets/logo.png" alt="fucl">
+</div>
+</header>
+<main>
+<h1>החלום ליהלום </h1>
+<article>
+לפני שרוכשים יהלום או אבן חן מחנות 
+כדאי לבדוק פרמטרים חשובים 
+שהם גודל, ניקיון, צבע וטיב העבודה .<br>
+פרמטרים אלו הם יסודות הבחירה של יהלומים ואבני חן .
+</article>
+<article>
+מכיון שלא כל אחד יודע לזהות פגמים ביהלום ולקבוע את ערכו ,<br>
+אני מציע את שרותי כגמולוג מומחה ממכללת IGL
+ובעל ניסיון רחב בתחום שאלוה אותך בבחירת יהלום או האבן חן שתמיד רציתם .<br>
+לאחר שנרכוש את היהלום או את האבן חן ,
+ אני מציע  שרות של  יצירת תכשיט ליהלום או לאבן חן שנרכוש . <br>
+יש לי תיק עבודות נרחב 
+וקהל לקוחות מרוצה והמלצות חמות .
+</article>
+<li>
+ישנה אפשרות לבדיקת יהלומים ואבני חן אצלי במעבדה עם ציוד איכותי ומשוכלל 
+וכן הערכת מחיר ,
+איכות אמינות שרות ומיקצועיות הם המוטו שלי.
+</li>
+<div>
+<h2>תמונות</h2>
+<div class="container">
+ <button (click)="next()" [disabled]="nextD"><</button>
+ <div style="height: 100%;width: 100%;">
+<img style="height: 80%;width: 100%;border: 2px solid black;border-radius: 5%;"  [src]="pictures[index]" alt="hhhh"></div>
+<button (click)="prev()" [disabled]="prevD">></button>
+</div>
+<h2>סרטונים</h2>
+<div class="container">
+  <button (click)="nextV()" [disabled]="nextVD"><</button>
+  <div style="height: 100%;width: 100%;">
+    <video style="height: 100%;width: 100%;border: 2px solid black;border-radius: 5%;" [src]="videos[indexV]" type="video/mp4" controls></video>></div>
+ <button (click)="prevV()" [disabled]="prevVD">></button>
+ </div>
+</div>
+</main>
+<footer></footer>
 <router-outlet></router-outlet>

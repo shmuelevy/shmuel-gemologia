@@ -1,46 +1,66 @@
 <header>
-<div style="height: 100%;width: 30%;">
+<div style="height: 100%;width: 45%;">
   <img class="logo"  src="../assets/logo.png" alt="fucl">
 </div>
 </header>
+<nav style="width: 100%;height:50px;padding: 15px; display: flex; flex-direction: row; align-items: center;justify-content: space-between;border: 1px solid black;">
+  <a href="#article" >אודות</a>|
+  <a href="#images">תמונות</a>|
+  <a href="#videos">סרטונים</a>|
+  <a href="#degrees">תעודות</a>|
+  <a href="#reviews">חוות דעת</a>|
+  <a href="#info">יצירת קשר</a>|
+</nav>
 <main>
-<h1>החלום ליהלום </h1>
+<h1 id="article">החלום ליהלום </h1>
 <article>
-לפני שרוכשים יהלום או אבן חן מחנות 
-כדאי לבדוק פרמטרים חשובים 
-שהם גודל, ניקיון, צבע וטיב העבודה .<br>
-פרמטרים אלו הם יסודות הבחירה של יהלומים ואבני חן .
+  לפני שרוכשים יהלום או אבן חן מחנות 
+  כדאי לבדוק פרמטרים חשובים 
+  שהם גודל, ניקיון, צבע וטיב העבודה.  <br>
+  פרמטרים אלו הם יסודות הבחירה של יהלומים ואבני חן.
 </article>
 <article>
-מכיון שלא כל אחד יודע לזהות פגמים ביהלום ולקבוע את ערכו ,<br>
-אני מציע את שרותי כגמולוג מומחה ממכללת IGL
-ובעל ניסיון רחב בתחום שאלוה אותך בבחירת יהלום או האבן חן שתמיד רציתם .<br>
-לאחר שנרכוש את היהלום או את האבן חן ,
- אני מציע  שרות של  יצירת תכשיט ליהלום או לאבן חן שנרכוש . <br>
-יש לי תיק עבודות נרחב 
-וקהל לקוחות מרוצה והמלצות חמות .
+  מכיון שלא כול אחד יודע לזהות פגמים ביהלום ולקבוע את ערכו ,
+  אני מציע את שרותי כגמולוג מומחה ממכללת IGL
+  ובעל ניסיון רחב בתחום. <br>
+  אלווה אתכם בבחירת יהלום או האבן חן שתמיד רציתם. <br>
+  לאחר שנרכוש את היהלום או את האבן חן 
+  אני מציע  שרות של  יצירת תכשיט ליהלום או לאבן חן. <br>
+ יש לי תיק עבודות נרחב 
+ וקהל לקוחות מרוצים והמלצות חמות. 
 </article>
 <li>
-ישנה אפשרות לבדיקת יהלומים ואבני חן אצלי במעבדה עם ציוד איכותי ומשוכלל 
-וכן הערכת מחיר ,
-איכות אמינות שרות ומיקצועיות הם המוטו שלי.
+  ישנה אפשרות לבדיקת יהלומים ואבני חן אצלי במעבדה עם ציוד איכותי ומשוכלל, 
+  וכן הערכת מחיר. <br></li>
+  <li>
+  <b>איכות אמינות שרות ומיקצועיות הם המוטו שלי.</b>
 </li>
 <div>
-<h2>תמונות</h2>
-<div class="container">
+<div class="container" id="images">
  <button (click)="next()" [disabled]="nextD"><</button>
  <div style="height: 100%;width: 100%;">
-<img style="height: 80%;width: 100%;border: 2px solid black;border-radius: 5%;"  [src]="pictures[index]" alt="hhhh"></div>
+<img style="height: 100%;width: 100%;border: 2px solid black;border-radius: 5%;"  [src]="pictures[index]" alt="hhhh"></div>
 <button (click)="prev()" [disabled]="prevD">></button>
 </div>
-<h2>סרטונים</h2>
-<div class="container">
+<div class="container2" id="videos">
   <button (click)="nextV()" [disabled]="nextVD"><</button>
   <div style="height: 100%;width: 100%;">
     <video style="height: 100%;width: 100%;border: 2px solid black;border-radius: 5%;" [src]="videos[indexV]" type="video/mp4" controls></video>></div>
  <button (click)="prevV()" [disabled]="prevVD">></button>
  </div>
 </div>
+<div class="container3" id="degrees">
+
+</div>
+<div class="container3" id="reviews">
+
+</div>
 </main>
-<footer></footer>
+<footer id="info" >
+<h4>קבל ייעוץ עוד היום:</h4>
+<div style="height: 100px;width: 80%;display: flex;align-items: center;justify-content: center;flex-direction: row;">
+<a target="_blank"  href="https://wa.me/972545349686?text=%D7%90%D7%A0%D7%99%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%A7%D7%A0%D7%99%D7%99%D7%AA%20%D7%99%D7%94%D7%9C%D7%95%D7%9D%2F%D7%90%D7%91%D7%9F%20%D7%97%D7%9F%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A2%D7%96%D7%A8%D7%94" >
+  <img style="height: 50px;width: 50px;" src="../assets/whatsapp.png" ></a>
+</div>
+</footer>
 <router-outlet></router-outlet>

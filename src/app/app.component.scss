@@ -114,6 +114,12 @@ padding: 15px;
 margin-top: 5%;
 font-size: larger;
 font-weight: bold;
+animation: blink 3s infinite forwards ;
+}
+@keyframes blink {
+    0%{color: black;}
+    50%{color: red;}
+    100%{color: black;}
 
 }
 h3{

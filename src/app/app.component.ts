@@ -82,4 +82,22 @@ nextV(){
       }
   }
 
+ isFullSize: boolean = false;
+
+    biggerPic(event: MouseEvent) {
+        const imgElement = event.target as HTMLImageElement;
+        if (this.isFullSize) {
+            imgElement.style.height = '100%'; 
+            imgElement.style.width = '100%'; 
+            imgElement.style.zIndex = 'auto'
+            imgElement.style.position = 'relative'
+        } else {
+            imgElement.style.height = '100%';
+            imgElement.style.width = '100%';
+            imgElement.style.zIndex = '999'
+            imgElement.style.position = 'absolute'
+            imgElement.style.right = '0%'
+        }
+        this.isFullSize = !this.isFullSize; 
+    }
 }

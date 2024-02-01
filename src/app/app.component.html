@@ -1,5 +1,5 @@
 <header>
-<div style="height: 100%;width: 45%;">
+<div class="logoc">
   <img class="logo"  src="../assets/logo.png" alt="fucl">
 </div>
 </header>
@@ -8,7 +8,6 @@
   <a href="#images">תמונות</a>|
   <a href="#videos">סרטונים</a>|
   <a href="#degrees">תעודות</a>|
-  <a href="#reviews">חוות דעת</a>|
   <a href="#info">יצירת קשר</a>|
 </nav>
 <main>
@@ -20,7 +19,7 @@
   פרמטרים אלו הם יסודות הבחירה של יהלומים ואבני חן.
 </article>
 <article>
-  מכיון שלא כול אחד יודע לזהות פגמים ביהלום ולקבוע את ערכו ,
+  מכיון שלא כל אחד יודע לזהות פגמים ביהלום ולקבוע את ערכו ,
   אני מציע את שרותי כגמולוג מומחה ממכללת IGL
   ובעל ניסיון רחב בתחום. <br>
   אלווה אתכם בבחירת יהלום או האבן חן שתמיד רציתם. <br>
@@ -42,18 +41,16 @@
 <img style="height: 100%;width: 100%;border: 2px solid black;border-radius: 5%;"  [src]="pictures[index]" alt="hhhh"></div>
 <button (click)="prev()" [disabled]="prevD">></button>
 </div>
-<div class="container2" id="videos">
+<div class="container" id="videos">
   <button (click)="nextV()" [disabled]="nextVD"><</button>
   <div style="height: 100%;width: 100%;">
-    <video style="height: 100%;width: 100%;border: 2px solid black;border-radius: 5%;" [src]="videos[indexV]" type="video/mp4" controls></video>></div>
+    <video style="height: 100%;width: 100%;border: 2px solid black;border-radius: 5%;" [src]="videos[indexV]" type="video/mp4" controls></video></div>
  <button (click)="prevV()" [disabled]="prevVD">></button>
  </div>
 </div>
-<div class="container3" id="degrees">
-
-</div>
-<div class="container3" id="reviews">
-
+<div class="container3" id="degrees" style="display: flex;margin-top: 10%;justify-content: space-between;align-items:center ;">
+<img src="../assets/degree1.jpg" height="400" width="400" style="margin-left: 4%;border: 3px solid black;">
+<img src="../assets/degree2.jpg" height="400" width="400" style="border: 3px solid black;">
 </div>
 </main>
 <footer id="info" >
@@ -61,6 +58,9 @@
 <div style="height: 100px;width: 80%;display: flex;align-items: center;justify-content: center;flex-direction: row;">
 <a target="_blank"  href="https://wa.me/972545349686?text=%D7%90%D7%A0%D7%99%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%A7%D7%A0%D7%99%D7%99%D7%AA%20%D7%99%D7%94%D7%9C%D7%95%D7%9D%2F%D7%90%D7%91%D7%9F%20%D7%97%D7%9F%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A2%D7%96%D7%A8%D7%94" >
   <img style="height: 50px;width: 50px;" src="../assets/whatsapp.png" ></a>
+  <a href="https://www.facebook.com/profile.php?id=61556117670246&mibextid=ZbWKwL" style="margin: 10%;" target="_blank">
+    <img style="height:60px;width: 60px;" src="../assets/facebook.png" >
+  </a>
 </div>
 </footer>
 <router-outlet></router-outlet>

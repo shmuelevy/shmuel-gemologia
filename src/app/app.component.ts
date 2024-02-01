@@ -19,6 +19,9 @@ export class AppComponent {
     "../assets/image4.jpg",
     "../assets/image5.jpg",
     "../assets/image6.jpg",
+    "../assets/image7.jpg",
+    "../assets/image8.jpg",
+
   ]
   videos = [
     "../assets/video1.mp4",
@@ -33,11 +36,11 @@ nextVD = false
 prevVD = false
 
 next(){
-if(this.index>=0&&this.index<5){
+if(this.index>=0&&this.index<7){
 this.prevD = false
 this.index+=1;
 }
-if(this.index===5){
+if(this.index===7){
   this.nextD = true
 }
 }

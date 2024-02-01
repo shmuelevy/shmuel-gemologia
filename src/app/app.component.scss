@@ -7,11 +7,17 @@ header{
 align-items: center;
 justify-content: center;
 }
-
+.logoc{
+    height:100%;
+    width: 45%;
+    @media screen and (max-width: 427px) {
+        width: 60%;
+    }
+}
 .logo{
     height: 100%;
     width: 100%;
-   
+    
 }
 main{
     margin-top: 5%;
@@ -51,7 +57,7 @@ li{
    flex-direction: row;  
    margin-top: 300px;
    @media screen and (max-width: 327px) {
-    width: 150px;
+    width: 180px;
     margin-right: 24px;
     margin-top: 7px;
 }

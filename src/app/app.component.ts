@@ -18,13 +18,11 @@ export class AppComponent {
    [ "../assets/image3.jpg",
     "../assets/image4.jpg",],
    [ "../assets/image5.jpg",
-    "../assets/image6.jpg",],
-    ["../assets/image7.jpg",
-    "../assets/image8.jpg",],
-    ["../assets/image9.jpeg",
-    "../assets/image10.jpeg",],
-   ["../assets/image11.jpeg",],
-
+    "../assets/image6.jpeg",],
+    ["../assets/image7.jpeg",
+    "../assets/image8.jpg"],
+    ["../assets/image9.jpg",
+    "../assets/image10.jpg",],
   ]
   videos = [
    [ "../assets/video1.mp4",

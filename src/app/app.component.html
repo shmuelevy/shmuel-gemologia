@@ -1,15 +1,15 @@
 <header>
 <div class="logoc">
-  <img class="logo"  src="../assets/logo.png" alt="fucl">
+  <img class="logo"  src="../assets/logo.png" alt="נכשלה טעינת התמונה אנא רענן את העמוד">
 </div>
 </header>
 <main>
   <nav style="width: 100%;height:50px;padding: 15px; display: flex; flex-direction: row; align-items: center;justify-content: space-between;">
-    <a href="#article" >אודות</a>|
-    <a href="#degrees">תעודות</a>|
-    <a href="#images">תמונות</a>|
-    <a href="#videos">סרטונים</a>|
-    <a href="#info">יצירת קשר</a>|
+    <a href="#article" class="a" >אודות</a>|
+    <a href="#degrees" class="a">תעודות</a>|
+    <a href="#images" class="a">תמונות</a>|
+    <a href="#videos" class="a">סרטונים</a>|
+    <a href="#info" class="a">יצירת קשר</a>|
   </nav>
 <h1 id="article">החלום ליהלום </h1>
 <article>
@@ -32,29 +32,29 @@
   <b>איכות אמינות שירות ומקצועיות הם המוטו שלי.</b>
 </article>
 <div class="container3" id="degrees">
-  <img src="../assets/degree1.jpg" height="90%" width="90%" style="border: 3px solid black;position: relative;top: 10%;">
-  <img src="../assets/degree2.jpg" height="90%" width="90%" style="border: 3px solid black;margin-top: 10%;">
+  <img src="../assets/degree1.jpg" height="90%" width="90%" style="border: 3px solid black;position: relative;top: 10%;" alt="נכשלה טעינת התמונה אנא רענן את העמוד">
+  <img src="../assets/degree2.jpg" height="90%" width="90%" style="border: 3px solid black;margin-top: 10%;" alt="נכשלה טעינת התמונה אנא רענן את העמוד">
   </div>
 
 <div style="height: auto;display: flex;flex-direction: column;align-items: center;justify-content: space-between;">
 <div class="container" id="images">
  <button (click)="next()" [disabled]="nextD"><</button>
  <div style="height: 100%;width: 100%;" *ngFor="let picture of pictures[index]">
-<img style="height: 100%;width: 100%;border: 2px solid black;border-radius: 5%;" (click)="biggerPic($event)" [src]="picture"  alt="hhhh">
+<img style="height: 100%;width: 100%;border: 2px solid black;border-radius: 5%;" (click)="biggerPic($event)" [src]="picture"  alt="נכשלה טעינת התמונה אנא רענן את העמוד">
 </div>
 <button (click)="prev()" [disabled]="prevD">></button>
 </div>
-<a class="infoP" href="https://wa.me/972545349686?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A8%D7%90%D7%95%D7%AA%20%D7%A2%D7%95%D7%93%20%D7%AA%D7%9E%D7%95%D7%A0%D7%95%D7%AA">
+<a class="infoP a" href="https://wa.me/972545349686?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A8%D7%90%D7%95%D7%AA%20%D7%A2%D7%95%D7%93%20%D7%AA%D7%9E%D7%95%D7%A0%D7%95%D7%AA">
    לחצו עליי לעוד תמונות </a>
 
 <div class="container" id="videos">
   <button (click)="nextV()" [disabled]="nextVD"><</button>
   <div style="height: 100%;width: 100%;" *ngFor="let video of videos[indexV]">
-    <video style="height: 100%;background-color: black; width: 100%;border: 2px solid black;border-radius: 5%;" [src]="video" type="video/mp4" controls></video>
+    <video style="height: 100%;background-color: black; width: 100%;border: 2px solid black;border-radius: 5%;" [src]="video" type="video/mp4" alt="נכשלה טעינת התמונה אנא רענן את העמוד" controls></video>
   </div>
  <button (click)="prevV()" [disabled]="prevVD">></button>
  </div>
- <a class="infoP" href="https://wa.me/972545349686?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A8%D7%90%D7%95%D7%AA%20%D7%A2%D7%95%D7%93%20%D7%A1%D7%A8%D7%98%D7%95%D7%A0%D7%99%D7%9D">
+ <a class="infoP a" href="https://wa.me/972545349686?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A8%D7%90%D7%95%D7%AA%20%D7%A2%D7%95%D7%93%20%D7%A1%D7%A8%D7%98%D7%95%D7%A0%D7%99%D7%9D">
    לחצו עליי לעוד סרטונים </a>
 </div>
 
@@ -62,16 +62,16 @@
 <footer id="info" style="position: relative;top: 5%;display: flex;align-items: center;justify-content: space-between;flex-direction:column;">
 <h4 style="display: block;">קבל ייעוץ עוד היום:</h4>
 <div style="height: 100px;width: 80%;display: flex;align-items: center;justify-content: center;flex-direction: row;">
-<a target="_blank"   href="https://wa.me/972545349686?text=%D7%90%D7%A0%D7%99%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%A7%D7%A0%D7%99%D7%99%D7%AA%20%D7%99%D7%94%D7%9C%D7%95%D7%9D%2F%D7%90%D7%91%D7%9F%20%D7%97%D7%9F%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A2%D7%96%D7%A8%D7%94" >
-  <img style="height: 50px;width: 50px;" src="../assets/whatsapp.png" class="icon-a" ></a>
-  <a href="https://www.facebook.com/profile.php?id=61556117670246&mibextid=ZbWKwL" style="margin: 10%;" target="_blank">
-    <img style="height:60px;width: 60px;" src="../assets/facebook.png" class="icon-a" >
+<a target="_blank" class="a"  href="https://wa.me/972545349686?text=%D7%90%D7%A0%D7%99%20%D7%9E%D7%A2%D7%95%D7%A0%D7%99%D7%99%D7%9F%20%D7%91%D7%A7%D7%A0%D7%99%D7%99%D7%AA%20%D7%99%D7%94%D7%9C%D7%95%D7%9D%2F%D7%90%D7%91%D7%9F%20%D7%97%D7%9F%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A2%D7%96%D7%A8%D7%94" >
+  <img style="height: 50px;width: 50px;" src="../assets/whatsapp.png" class="icon-a" alt="לא זמין" ></a>
+  <a class="a" href="https://www.facebook.com/profile.php?id=61556117670246&mibextid=ZbWKwL" style="margin: 10%;" target="_blank">
+    <img style="height:60px;width: 60px;" src="../assets/facebook.png" class="icon-a" alt="לא זמין">
   </a>
-<a href="mailto:shlomo60y@gmail.com"  target="_blank">
-  <img style="height:60px;width: 50px;" src="../assets/gmail.png" class="icon-a">
+<a href="mailto:shlomo60y@gmail.com" class="a" target="_blank">
+  <img style="height:60px;width: 50px;" src="../assets/gmail.png" class="icon-a" alt="לא זמין">
 </a>
 </div>
 <h4>טלפון: 0545349686</h4>
-<span style="font-size: large;margin-top: 5%;">כל הזכויות שמורות &copy; S.M.L פיתוח אתרים 2024</span>
+<span >כל הזכויות שמורות &copy; <a class="credit" href="mailto:shmuelev1234@gmail.com">S.M.L פיתוח אתרים 2024</a></span>
 </footer>
 <router-outlet></router-outlet>

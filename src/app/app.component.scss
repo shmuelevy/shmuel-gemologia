@@ -19,7 +19,7 @@ justify-content: center;
     width: 100%;
     
 }
-a{
+.a{
     color: black;
 }
 main{
@@ -131,9 +131,23 @@ footer{
     margin: 4%;
     display: flex;
 }
-a:hover{
+.a:hover{
     font-size: x-large;
 }
 .icon-a:hover{
 margin-bottom: 20%;
+}
+span{
+    font-size: large;
+    margin-top: 5%;
+    @media screen and (max-width: 427px) {
+       font-size:small;
+       margin-bottom: 9%;
+       
+    }
+}
+.credit{
+ cursor: grab;   
+ color: black;
+ font-style: italic;
 }
